@@ -52,7 +52,8 @@ export default function Sidebar() {
     return (
         <div className='h-screen'>
             <div className='logo px-3 py-4'>
-                <h1 className='text-bold text-3xl text-[#529696] font-bold'>unibazar</h1>
+                <span className='text-bold text-3xl text-[#529696] font-bold inline lg:hidden'>ub</span>
+                <span className='text-bold text-3xl text-[#529696] font-bold hidden lg:inline'>unibazar</span>
             </div>
 
             <div className="links mt-5">
@@ -62,7 +63,7 @@ export default function Sidebar() {
             </div>
 
             <div className='w-full h-[2px] bg-zinc-200 mt-7'></div>
-            <h1 className='mx-7 mt-4 text-bold text-zinc-500'>Additional</h1>
+            <h1 className='mx-7 mt-4 text-bold text-zinc-500 hidden lg:block'>Additional</h1>
 
             <div className="links mt-5">
                 {AdditionaltagsData.map((tag)=>(
